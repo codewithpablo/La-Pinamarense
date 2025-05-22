@@ -1,5 +1,4 @@
 import * as React from "react";
-import PaymentTabs from "../tabs/PaymentTabs";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -12,13 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 
 export default function CheckoutForm() {
   return (

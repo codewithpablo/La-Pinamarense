@@ -102,6 +102,7 @@ const Store = () => {
         
         { products.map(  (product)=>(
             <ProductCard
+                key={product.id}
                 imageUrl={product.imageUrl}
                 productName={product.productName}
                 brand={product.brand}

@@ -2,7 +2,7 @@
 
 "use client"
 
-"use client"
+import { TooltipItem } from 'chart.js';
 
 import { Doughnut } from 'react-chartjs-2'
 import {
@@ -53,10 +53,10 @@ const options = {
   plugins: {
     tooltip: {
       callbacks: {
-        label: function (tooltipItem: any) {
-          const billetera = billeteras[tooltipItem.dataIndex]
-          return `${billetera.nombre}: $${formatoLabel(billetera.saldo)}`
-        },
+              label: function (tooltipItem: TooltipItem<'doughnut'>) {
+        const billetera = billeteras[tooltipItem.dataIndex];
+        return `${billetera.nombre}: $${formatoLabel(billetera.saldo)}`;
+      }
       },
     },
     legend: { display: false },

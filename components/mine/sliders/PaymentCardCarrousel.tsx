@@ -6,8 +6,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
 import PaymentCard from "../cards/PaymentCard";
@@ -52,8 +50,8 @@ export default function PaymentsCardCarrousel() {
     <div className="p-0">
       <Carousel setApi={setApi} className="p-0">
         <CarouselContent>
-          {virtualWallets.map((wallet, index) => (
-            <CarouselItem key={index}>
+          {virtualWallets.map( () => (
+            <CarouselItem key={count}>
               <Card className="shadow-none border-none">
                 <CardContent className="flex items-center py-5 px-0 m-0">
                   <div className="relative z-50">

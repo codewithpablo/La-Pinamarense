@@ -1,13 +1,13 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+
+import Image from "next/image";
 
 import { Pencil, Trash2, Plus, Minus } from "lucide-react";
 const products = [
@@ -152,7 +152,7 @@ export default function ProductsTable() {
   {products.map((product) => (
     <TableRow key={product.invoice} className="space-y-3">
       <TableCell className="flex items-center gap-3">
-        <img
+        <Image
           src={`/promos.jpg`}
           alt={product.name}
           className="size-[30px] rounded-full object-cover"

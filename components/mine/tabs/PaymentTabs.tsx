@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Copy } from "lucide-react";
+import { Tabs,  TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const tabs = [
   {

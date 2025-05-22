@@ -7,7 +7,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LogOut, Settings, User } from "lucide-react";
+import { LogOut  } from "lucide-react";
 
 export default function LogOutMenu() {
   return (

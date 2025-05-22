@@ -7,8 +7,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import ProductSearcher from "../searchers/ProductSearcher";
-import CategorySelect from "../select/CategorySelect";
 const products = [
   {
     id: 206,

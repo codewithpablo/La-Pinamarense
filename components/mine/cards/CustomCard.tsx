@@ -1,15 +1,8 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardFooter,
 } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import {
-  ShoppingCartIcon,
-  InfoIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+
 import Image from "next/image";
 
 // Definimos las props que va a recibir

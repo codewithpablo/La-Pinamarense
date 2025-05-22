@@ -1,5 +1,5 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Bot, Home, Settings, User } from "lucide-react";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Home, Settings, User } from "lucide-react";
 
 const tabs = [
   {

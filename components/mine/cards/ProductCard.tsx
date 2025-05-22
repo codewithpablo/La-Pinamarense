@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ProductCardProps {
   imageUrl: string;
@@ -19,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className="max-w-sm border bg-gray-50   rounded-2xl shadow-xl overflow-hidden  transform transition-all hover:scale-105 duration-300">
-      <img
+      <Image
         src={imageUrl}
         alt={productName}
         className="w-full h-32 object-cover"

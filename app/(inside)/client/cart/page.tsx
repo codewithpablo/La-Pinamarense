@@ -13,7 +13,7 @@ const Cart = () => {
        <div className='flex flex-col gap-5 py-10 pr-10  w-1/2 h-[100%] overflow-hidden hideScrollbar '>
         <h1 className='text-bold text-green-800  text-center'>Productos agregados al carrito</h1>
         { products.map( (product)=>(
-            <div className='flex gap-3'>
+            <div className='flex gap-3' key={product.id}>
               <div className='flex justify-between w-full overflow-hidden bg-gray-50 border shadow-lg rounded-2xl h-32 '>
                   <div className='relative w-2/6'>
                         <Image

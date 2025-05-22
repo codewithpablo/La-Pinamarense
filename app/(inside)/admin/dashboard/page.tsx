@@ -2,7 +2,6 @@ import React from 'react'
 import SalesTable from '@/components/mine/tables/SalesTable'
 import DoughnutChart from '@/components/mine/charts/DounughtChart'
 import AdminTabs from '@/components/mine/tabs/AdminTabs'
-import PaymentCard from '@/components/mine/cards/PaymentCard'
 import Investments from '@/components/mine/charts/Investments'
 import PaymentsCardCarrousel from '@/components/mine/sliders/PaymentCardCarrousel'
 

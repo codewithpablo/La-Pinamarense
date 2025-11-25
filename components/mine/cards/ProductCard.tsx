@@ -33,7 +33,7 @@ const getBadgeData = (category: string, productName: string) => {
     // 3. RESTO DE CATEGORÍAS ESPECÍFICAS (V-POWER, LOCOS, PERNIL, etc.)
     else {
         // Usa el nombre de la categoría, limpiando "Combo(s)"
-        let baseText = category.toUpperCase().replace('COMBO', '').replace('S', '').trim();
+        const baseText = category.toUpperCase().replace('COMBO', '').replace('S', '').trim();
         
         text = baseText;
         colorStyle = 'bg-cyan-700/80 text-white shadow-md shadow-cyan-700/50'; 

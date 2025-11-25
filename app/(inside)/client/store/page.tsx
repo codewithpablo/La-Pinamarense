@@ -135,21 +135,6 @@ const containerVariants = {
     }
 };
 
-const itemVariants = {
-    hidden: { 
-        y: 60, opacity: 0, scale: 0.8, rotateX: 10
-    },
-    visible: { 
-        y: 0, opacity: 1, scale: 1, rotateX: 0,
-        transition: {
-            type: "spring", damping: 10, stiffness: 120, restDelta: 0.001 
-        }
-    },
-    exit: { 
-        opacity: 0, scale: 0.7, y: -30, rotateX: -10,
-        transition: { duration: 0.2 }
-    }
-};
 
 
 const Store = () => {

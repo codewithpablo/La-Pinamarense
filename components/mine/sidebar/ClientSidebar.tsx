@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 import {
   Home,
-  BarChart,
   LogOut,
 } from "lucide-react"
 

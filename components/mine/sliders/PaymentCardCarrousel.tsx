@@ -47,7 +47,7 @@ export default function PaymentsCardCarrousel() {
   }, [api]);
 
   return (
-    <div className="p-0">
+    <div className="p-0 m-0">
       <Carousel setApi={setApi} className="p-0">
         <CarouselContent>
           {virtualWallets.map( () => (

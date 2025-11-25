@@ -9,8 +9,7 @@ import {
 
 const menuItems = [
   { icon: <Home size={18} />, label: "Tienda", href: "/client/store",active: true},
-  { icon: <BarChart size={18} />, label: "Carrito",  href: "/client/cart"},
-  { icon: <LogOut size={18} />, label: "Cerrar sesion",href: "/"},
+  { icon: <LogOut size={18} />, label: "Volver al inicio",href: "/"},
 ]
 
 

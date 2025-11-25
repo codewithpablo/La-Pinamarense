@@ -29,16 +29,12 @@ export default function Home() {
                   <p className='font-bold whitespace-nowrap'>+2345 clientes registrados</p>
                 </div>
                  <div className="flex justify-center lg:justify-start  w-full gap-3">
-                       <Link href="/sign-up" className="flex-1 lg:flex-0">
+                       <Link href="/client/store" className="flex-1 lg:flex-0">
                             <Button  className="w-full hover:text-green-900 rounded-lg  lg:w-[150px]  border-transparent bg-green-900 hover:bg-white hover:border-1 hover:border-green-900">
-                              Crear cuenta  
+                              Ingresar a la tienda
                           </Button>
                        </Link>
-                      <Link href="sign-in" className="flex-1 lg:flex-0">
-                          <Button className="w-full rounded-lg   lg:w-[150px] bg-white border-green-800 text-green-900 border-1 hover:bg-green-900 hover:text-white">
-                          Iniciar sesion
-                          </Button>
-                      </Link>
+                      
                  </div>
               </div>
               <div className="flex items-center lg:py-5 flex-1  rounded-3xl overflow-hidden">

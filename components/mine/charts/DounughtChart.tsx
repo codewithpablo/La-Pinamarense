@@ -65,7 +65,7 @@ const options = {
 
 const DoughnutChartBilleteras = () => {
   return (
-    <div className="flex flex-col lg:flex-row lg:items-center gap-6  w-full">
+    <div className="flex flex-col lg:flex-row lg:items-center   gap-5">
       <div className="flex justify-center mx-auto w-36 h-36">
         <Doughnut data={data} options={options} />
       </div>

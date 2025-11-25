@@ -156,6 +156,8 @@ export default function ProductsTable() {
           src={`/promos.jpg`}
           alt={product.name}
           className="size-[30px] rounded-full object-cover"
+          width={30}
+          height={30}
         />
         <span>{product.name}</span>
       </TableCell>

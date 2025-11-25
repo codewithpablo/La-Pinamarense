@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 /* ------------------------------------------------------
-   FUNCIÓN COMPLETA getBadgeData (NO SE SACA NADA)
+   FUNCIÓN COMPLETA getBadgeData
 -------------------------------------------------------*/
 const getBadgeData = (category: string, productName: string) => {
     const lowerCategory = category.toLowerCase();
@@ -38,9 +38,22 @@ const getBadgeData = (category: string, productName: string) => {
 
 
 /* ------------------------------------------------------
-   MODAL COMPLETO (INCLUIDO EN ESTE MISMO ARCHIVO)
+   PROPS TIPADAS PARA EL MODAL
 -------------------------------------------------------*/
-const ProductModal = ({
+interface ProductModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    imageUrl: string;
+    productName: string;
+    category: string;
+    description: string;
+    price: string;
+}
+
+/* ------------------------------------------------------
+   MODAL TIPADO CORRECTAMENTE
+-------------------------------------------------------*/
+const ProductModal: React.FC<ProductModalProps> = ({
     isOpen,
     onClose,
     imageUrl,
@@ -48,7 +61,7 @@ const ProductModal = ({
     category,
     description,
     price,
-}: any) => {
+}) => {
     if (!isOpen) return null;
 
     return (
@@ -79,7 +92,7 @@ const ProductModal = ({
 
 
 /* ------------------------------------------------------
-   PRODUCT CARD COMPLETO
+   PRODUCT CARD
 -------------------------------------------------------*/
 interface ProductCardProps {
     imageUrl: string;
@@ -97,17 +110,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
     price,
 }) => {
 
-    // 📌 Acá se usa la función que YA está arriba
     const { text: badgeText, colorStyle: badgeStyle } = getBadgeData(category, productName);
 
-    // Control del modal
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
             <div className="max-w-sm border bg-gray-50 rounded-2xl shadow-xl overflow-hidden transition-all hover:scale-105">
 
-                {/* Imagen */}
                 <div className="relative h-32 w-full">
                     <Image
                         src={imageUrl}
@@ -116,7 +126,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
                         className="object-cover"
                     />
 
-                    {/* Badge */}
                     <div 
                         className={`absolute top-2 right-2 px-3 py-1 rounded-full text-xs font-medium uppercase tracking-widest ${badgeStyle}`}
                     >
@@ -133,7 +142,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
                     <p className="lg:text-xl font-bold text-green-700">${price}</p>
 
-                    {/* BOTÓN VER MÁS */}
                     <button
                         onClick={() => setIsOpen(true)}
                         className="w-full mt-2 bg-green-600 text-white rounded-xl py-2 text-sm font-semibold hover:bg-green-700 transition-all shadow-md"
@@ -143,7 +151,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 </div>
             </div>
 
-            {/* MODAL */}
             <ProductModal
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)}

@@ -276,7 +276,7 @@ const Store = () => {
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
-                    className='grid-cols-2 py-5 lg:grid-cols-4 grid gap-2 lg:gap-2 '
+                    className='grid-cols-2 py-5 lg:grid-cols-4 grid gap-1 lg:gap-2 '
                 >
                     <AnimatePresence>
                         { filteredProducts.map( (product)=>(

@@ -42,7 +42,7 @@ export interface Product {
 // ===================================================================
 // 1. ARRAY DE PRODUCTOS CON RUTAS DE IMAGENES ACTUALIZADAS
 // ===================================================================
-export const products: Product[] = [
+ const products: Product[] = [
     // --- COMBOS INIGUALABLES (Categoría: Combos) - USAN FIAMBRES_IMAGE ---
     { id: 1, imageUrl: FIAMBRES_IMAGE, productName: "Combo 1", category: "Combos", description: "1 pan de miga + 10 fetas de barra + 10 fetas de paleta", price: "4000" },
     { id: 2, imageUrl: FIAMBRES_IMAGE, productName: "Combo 1 VIP", category: "Combos", description: "1 pan de miga + 10 fetas de barra + 10 fetas de paleta coc.", price: "4200" }, 
